@@ -34,7 +34,7 @@ export class AppController {
     return this.appService.update(id, createStudentDto)
   }
 
-  @Delete('')
+  @Delete('/:id')
   getlist (@Param('id') id:string){
     return this.appService.delete(id)
   }
